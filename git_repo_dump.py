@@ -5,7 +5,7 @@ import os
 # ===== CONFIG =====
 OUTPUT_FILE = "repo_dump.txt"
 INCLUDE_EXTENSIONS = {
-    ".py", ".js", ".ts", ".java", ".html", ".css", ".json", ".md", ".yaml", ".yml"
+    ".ipnyb", ".py", ".js", ".ts", ".java", ".html", ".css", ".json", ".md", ".yaml", ".yml"
 }
 EXCLUDE_DIRS = {
     ".git", "node_modules", "venv", "__pycache__", "dist", "build"

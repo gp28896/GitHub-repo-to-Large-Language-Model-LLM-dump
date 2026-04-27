@@ -1,0 +1,77 @@
+===== REPO STRUCTURE =====
+README.md
+one_bite_pizza_rankings.csv
+one_bite_pizza_review.ipynb
+
+===== FILE CONTENTS =====
+
+===== FILE: README.md =====
+https://www.youtube.com/@OneBitePizzaReviews
+
+“One Bite Pizza Review” is a viral internet series created by Dave Portnoy where he travels around trying pizza and rating it in a very specific, consistent style.
+
+
+🍕 What “One Bite Pizza Review” actually is
+
+
+It’s a simple but strict format:
+
+
+Portnoy goes to a pizza shop (usually unannounced)
+
+Orders a plain cheese slice (so every review is comparable)
+
+Takes a bite and says:
+
+👉 “One bite, everybody knows the rules” (his catchphrase)
+
+Then gives a score out of 10 (with decimals)
+
+
+👉 The goal: judge pizza purely on taste and basics, not hype.
+
+
+⚖️ How the scoring works
+
+Scale: 0.0 → 10.0
+
+Decimals matter (e.g., 7.1, 8.3, 9.4)
+
+Scores above 9 are extremely rare
+
+Rough interpretation:
+
+6–7 → decent / average
+
+7–8 → good
+
+8–9 → great
+
+9+ → elite (best of the best)
+
+google maps URLs of locations with scores >= 9: https://maps.app.goo.gl/BEV5D5ZZ1qTXNGR69
+
+🍕 What he looks for in pizza
+
+
+Portnoy focuses heavily on:
+
+
+Crust / undercarriage (crispness, structure)
+
+Sauce balance
+
+Cheese quality
+
+“No flop” test (slice shouldn’t droop too much)
+
+"one_bite_pizza_review.ipnyb" creates a csv file that contains google maps locations of the pizza places rated by Dave with the following rows:
+1. Rank
+2. Score
+3. Name
+4. City
+5. State
+6. Google Maps Link
+
+The scores are gathered from https://www.onebitepizzarankings.com/
+
