@@ -1,395 +1,2180 @@
 ===== REPO STRUCTURE =====
-README.md
-one_bite_pizza_rankings.csv
-one_bite_pizza_review.ipynb
+Summaryyyyyyyyyyyyyyy.docx
+naam.zip
+naam/naam/.classpath
+naam/naam/.project
+naam/naam/.settings/org.eclipse.jdt.core.prefs
+naam/naam/.settings/org.eclipse.m2e.core.prefs
+naam/naam/.settings/org.eclipse.wst.common.component
+naam/naam/.settings/org.eclipse.wst.common.project.facet.core.xml
+naam/naam/.settings/org.eclipse.wst.validation.prefs
+naam/naam/.settings/org.springframework.ide.eclipse.beans.core.prefs
+naam/naam/.settings/org.springframework.ide.eclipse.core.prefs
+naam/naam/.springBeans
+naam/naam/pom.xml
+naam/naam/src/main/java/com/neu/naam/HomeController.java
+naam/naam/src/main/java/com/neu/naam/controller/AdvertController.java
+naam/naam/src/main/java/com/neu/naam/controller/BillController.java
+naam/naam/src/main/java/com/neu/naam/controller/CartController.java
+naam/naam/src/main/java/com/neu/naam/controller/CategoryController.java
+naam/naam/src/main/java/com/neu/naam/controller/LogoutController.java
+naam/naam/src/main/java/com/neu/naam/controller/UserController.java
+naam/naam/src/main/java/com/neu/naam/dao/AdvertDAO.java
+naam/naam/src/main/java/com/neu/naam/dao/CartDAO.java
+naam/naam/src/main/java/com/neu/naam/dao/CategoryDAO.java
+naam/naam/src/main/java/com/neu/naam/dao/DAO.java
+naam/naam/src/main/java/com/neu/naam/dao/UserDAO.java
+naam/naam/src/main/java/com/neu/naam/exception/AdvertException.java
+naam/naam/src/main/java/com/neu/naam/exception/CartException.java
+naam/naam/src/main/java/com/neu/naam/exception/CategoryException.java
+naam/naam/src/main/java/com/neu/naam/exception/UserException.java
+naam/naam/src/main/java/com/neu/naam/interceptor/Interceptor.java
+naam/naam/src/main/java/com/neu/naam/pojo/Advert.java
+naam/naam/src/main/java/com/neu/naam/pojo/Cart.java
+naam/naam/src/main/java/com/neu/naam/pojo/Category.java
+naam/naam/src/main/java/com/neu/naam/pojo/Email.java
+naam/naam/src/main/java/com/neu/naam/pojo/PDFView.java
+naam/naam/src/main/java/com/neu/naam/pojo/Person.java
+naam/naam/src/main/java/com/neu/naam/pojo/User.java
+naam/naam/src/main/java/com/neu/naam/validator/AdvertValidator.java
+naam/naam/src/main/java/com/neu/naam/validator/CategoryValidator.java
+naam/naam/src/main/java/com/neu/naam/validator/UserValidator.java
+naam/naam/src/main/java/hibernate.cfg.xml
+naam/naam/src/main/resources/log4j.xml
+naam/naam/src/main/webapp/WEB-INF/spring-mvc.xml
+naam/naam/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml
+naam/naam/src/main/webapp/WEB-INF/spring/root-context.xml
+naam/naam/src/main/webapp/WEB-INF/views/account-success.jsp
+naam/naam/src/main/webapp/WEB-INF/views/advert-form.jsp
+naam/naam/src/main/webapp/WEB-INF/views/advert-list.jsp
+naam/naam/src/main/webapp/WEB-INF/views/advert-success.jsp
+naam/naam/src/main/webapp/WEB-INF/views/buyer-home.jsp
+naam/naam/src/main/webapp/WEB-INF/views/category-form.jsp
+naam/naam/src/main/webapp/WEB-INF/views/category-success.jsp
+naam/naam/src/main/webapp/WEB-INF/views/error.jsp
+naam/naam/src/main/webapp/WEB-INF/views/home.jsp
+naam/naam/src/main/webapp/WEB-INF/views/logout.jsp
+naam/naam/src/main/webapp/WEB-INF/views/register-user.jsp
+naam/naam/src/main/webapp/WEB-INF/views/seller-advert-list.jsp
+naam/naam/src/main/webapp/WEB-INF/views/user-cart.jsp
+naam/naam/src/main/webapp/WEB-INF/views/user-home.jsp
+naam/naam/src/main/webapp/WEB-INF/views/view.jsp
+naam/naam/src/main/webapp/WEB-INF/web.xml
+naam/naam/src/main/webapp/index.jsp
+naam/naam/src/test/resources/log4j.xml
+naam/naam/target/classes/com/neu/naam/HomeController.class
+naam/naam/target/classes/com/neu/naam/controller/AdvertController.class
+naam/naam/target/classes/com/neu/naam/controller/BillController.class
+naam/naam/target/classes/com/neu/naam/controller/CartController.class
+naam/naam/target/classes/com/neu/naam/controller/CategoryController.class
+naam/naam/target/classes/com/neu/naam/controller/LogoutController.class
+naam/naam/target/classes/com/neu/naam/controller/UserController.class
+naam/naam/target/classes/com/neu/naam/dao/AdvertDAO.class
+naam/naam/target/classes/com/neu/naam/dao/CartDAO.class
+naam/naam/target/classes/com/neu/naam/dao/CategoryDAO.class
+naam/naam/target/classes/com/neu/naam/dao/DAO.class
+naam/naam/target/classes/com/neu/naam/dao/UserDAO.class
+naam/naam/target/classes/com/neu/naam/exception/AdvertException.class
+naam/naam/target/classes/com/neu/naam/exception/CartException.class
+naam/naam/target/classes/com/neu/naam/exception/CategoryException.class
+naam/naam/target/classes/com/neu/naam/exception/UserException.class
+naam/naam/target/classes/com/neu/naam/interceptor/Interceptor.class
+naam/naam/target/classes/com/neu/naam/pojo/Advert.class
+naam/naam/target/classes/com/neu/naam/pojo/Cart.class
+naam/naam/target/classes/com/neu/naam/pojo/Category.class
+naam/naam/target/classes/com/neu/naam/pojo/Email.class
+naam/naam/target/classes/com/neu/naam/pojo/PDFView.class
+naam/naam/target/classes/com/neu/naam/pojo/Person.class
+naam/naam/target/classes/com/neu/naam/pojo/User.class
+naam/naam/target/classes/com/neu/naam/validator/AdvertValidator.class
+naam/naam/target/classes/com/neu/naam/validator/CategoryValidator.class
+naam/naam/target/classes/com/neu/naam/validator/UserValidator.class
+naam/naam/target/classes/hibernate.cfg.xml
+naam/naam/target/classes/log4j.xml
+naam/naam/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+naam/naam/target/m2e-wtp/web-resources/META-INF/maven/com.neu/naam/pom.properties
+naam/naam/target/m2e-wtp/web-resources/META-INF/maven/com.neu/naam/pom.xml
+naam/naam/target/maven-archiver/pom.properties
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT.war
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/HomeController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/controller/AdvertController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/controller/BillController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/controller/CartController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/controller/CategoryController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/controller/LogoutController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/controller/UserController.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/dao/AdvertDAO.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/dao/CartDAO.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/dao/CategoryDAO.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/dao/DAO.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/dao/UserDAO.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/exception/AdvertException.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/exception/CartException.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/exception/CategoryException.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/exception/UserException.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/interceptor/Interceptor.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/Advert.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/Cart.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/Category.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/Email.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/PDFView.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/Person.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/pojo/User.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/validator/AdvertValidator.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/validator/CategoryValidator.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/neu/naam/validator/UserValidator.class
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/hibernate.cfg.xml
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/log4j.xml
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/activation-1.1.1.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/aspectjrt-1.6.10.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/bcmail-jdk14-1.38.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/bcmail-jdk14-138.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/bcprov-jdk14-1.38.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/bcprov-jdk14-138.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/bctsp-jdk14-1.38.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/classmate-1.3.0.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/commons-email-1.4.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/hibernate-core-5.1.5.Final.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/itext-2.1.7.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/itextpdf-5.5.9.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jandex-2.0.3.Final.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.2.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.6.6.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/log4j-1.2.15.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.15.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/persistence-api-1.0.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.6.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-asm-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-beans-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-context-support-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-core-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-expression-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-web-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/spring-webmvc-3.1.1.RELEASE.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/lib/xml-apis-1.0.b2.jar
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/appServlet/servlet-context.xml
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/root-context.xml
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/home.jsp
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/WEB-INF/web.xml
+naam/naam/target/naam-1.0.0-BUILD-SNAPSHOT/index.jsp
+naam/naam/target/test-classes/log4j.xml
+web tools  (1).7z
 
 ===== FILE CONTENTS =====
 
-===== FILE: README.md =====
-https://www.youtube.com/@OneBitePizzaReviews
+===== FILE: naam/naam/src/main/java/com/neu/naam/HomeController.java =====
+package com.neu.naam;
 
-“One Bite Pizza Review” is a viral internet series created by Dave Portnoy where he travels around trying pizza and rating it in a very specific, consistent style.
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-🍕 What “One Bite Pizza Review” actually is
-
-
-It’s a simple but strict format:
-
-
-Portnoy goes to a pizza shop (usually unannounced)
-
-Orders a plain cheese slice (so every review is comparable)
-
-Takes a bite and says:
-
-👉 “One bite, everybody knows the rules” (his catchphrase)
-
-Then gives a score out of 10 (with decimals)
-
-
-👉 The goal: judge pizza purely on taste and basics, not hype.
-
-
-⚖️ How the scoring works
-
-Scale: 0.0 → 10.0
-
-Decimals matter (e.g., 7.1, 8.3, 9.4)
-
-Scores above 9 are extremely rare
-
-Rough interpretation:
-
-6–7 → decent / average
-
-7–8 → good
-
-8–9 → great
-
-9+ → elite (best of the best)
-
-google maps URLs of locations with scores >= 9: https://maps.app.goo.gl/BEV5D5ZZ1qTXNGR69
-
-🍕 What he looks for in pizza
-
-
-Portnoy focuses heavily on:
-
-
-Crust / undercarriage (crispness, structure)
-
-Sauce balance
-
-Cheese quality
-
-“No flop” test (slice shouldn’t droop too much)
-
-"one_bite_pizza_review.ipnyb" creates a csv file that contains google maps locations of the pizza places rated by Dave with the following rows:
-1. Rank
-2. Score
-3. Name
-4. City
-5. State
-6. Google Maps Link
-
-The scores are gathered from https://www.onebitepizzarankings.com/
-
-
-===== FILE: one_bite_pizza_review.ipynb =====
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": []
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "code",
-      "execution_count": 2,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "c48A_fd6kYQo",
-        "outputId": "eb4efbb9-3d21-4283-c229-d683a1f9aa83"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (2.32.4)\n",
-            "Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.12/dist-packages (4.13.5)\n",
-            "Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (2.2.2)\n",
-            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests) (3.4.6)\n",
-            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests) (3.11)\n",
-            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests) (2.5.0)\n",
-            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests) (2026.2.25)\n",
-            "Requirement already satisfied: soupsieve>1.2 in /usr/local/lib/python3.12/dist-packages (from beautifulsoup4) (2.8.3)\n",
-            "Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.12/dist-packages (from beautifulsoup4) (4.15.0)\n",
-            "Requirement already satisfied: numpy>=1.26.0 in /usr/local/lib/python3.12/dist-packages (from pandas) (2.0.2)\n",
-            "Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas) (2.9.0.post0)\n",
-            "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas) (2025.2)\n",
-            "Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas) (2025.3)\n",
-            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)\n"
-          ]
-        }
-      ],
-      "source": [
-        "!pip install requests beautifulsoup4 pandas"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "import requests\n",
-        "from bs4 import BeautifulSoup\n",
-        "import pandas as pd\n",
-        "import urllib.parse\n",
-        "import time\n",
-        "\n",
-        "URL = \"https://www.onebitepizzarankings.com/\"\n",
-        "\n",
-        "headers = {\n",
-        "    \"User-Agent\": \"Mozilla/5.0\"\n",
-        "}"
-      ],
-      "metadata": {
-        "id": "I6IPA4Lqkrk-"
-      },
-      "execution_count": 3,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "response = requests.get(URL, headers=headers)"
-      ],
-      "metadata": {
-        "id": "Os_sybKHkv_Z"
-      },
-      "execution_count": 7,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "soup = BeautifulSoup(response.text, \"html.parser\")"
-      ],
-      "metadata": {
-        "id": "ELdrrVTak695"
-      },
-      "execution_count": 8,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# Find table (adjust selector if site changes)\n",
-        "table = soup.find(\"table\")\n",
-        "\n",
-        "rows = []\n",
-        "headers = []"
-      ],
-      "metadata": {
-        "id": "8irgbUTxk7cK"
-      },
-      "execution_count": 9,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# Extract headers\n",
-        "for th in table.find_all(\"th\"):\n",
-        "    headers.append(th.text.strip())"
-      ],
-      "metadata": {
-        "id": "dD0JaZ8sk-xT"
-      },
-      "execution_count": 10,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# Add new column for Google Maps\n",
-        "headers.append(\"Google Maps Link\")\n",
-        "\n",
-        "# Extract rows\n",
-        "for tr in table.find_all(\"tr\")[1:]:\n",
-        "    cols = tr.find_all(\"td\")\n",
-        "    if len(cols) == 0:\n",
-        "        continue\n",
-        "\n",
-        "    row = [td.text.strip() for td in cols]\n",
-        "\n",
-        "    # Build Google Maps link using name + location (if available)\n",
-        "    query = \" \".join(row[:2])  # usually name + city\n",
-        "    maps_link = \"https://www.google.com/maps/search/?api=1&query=\" + urllib.parse.quote(query)\n",
-        "\n",
-        "    row.append(maps_link)\n",
-        "    rows.append(row)"
-      ],
-      "metadata": {
-        "id": "zQp2OscMlBoa"
-      },
-      "execution_count": 11,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# Convert to DataFrame\n",
-        "df = pd.DataFrame(rows, columns=headers)"
-      ],
-      "metadata": {
-        "id": "o6KmQ3RilGZ5"
-      },
-      "execution_count": 12,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "print(df)"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "Ff8nYfaXlJYe",
-        "outputId": "1f0cdc95-36da-4ba6-d5f9-cfc8ae0f2600"
-      },
-      "execution_count": 13,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "      Rank Score                            Name           City State  \\\n",
-            "0        1    10              Monte's Restaurant           Lynn    MA   \n",
-            "1        2   9.4                   Di Fara Pizza       Brooklyn    NY   \n",
-            "2        2   9.4      DeLucia's Brick Oven Pizza        Raritan    NJ   \n",
-            "3        2   9.4  Frank Pepe Pizzeria Napoletana  Chestnut Hill    MA   \n",
-            "4        5   9.3                   Luigi's Pizza       Brooklyn    NY   \n",
-            "...    ...   ...                             ...            ...   ...   \n",
-            "1138  1138   0.0         Blaze Fast Fire’d Pizza    Los Angeles    CA   \n",
-            "1139  1138   0.0                       Café Muse       New York    NY   \n",
-            "1140  1138   0.0            Rich’s Grilled Pizza        Augusta    GA   \n",
-            "1141  1138   0.0                Industry Kitchen       New York    NY   \n",
-            "1142  1138   0.0             Goodfellas Pizzeria      Lexington    KY   \n",
-            "\n",
-            "                                       Google Maps Link  \n",
-            "0     https://www.google.com/maps/search/?api=1&quer...  \n",
-            "1     https://www.google.com/maps/search/?api=1&quer...  \n",
-            "2     https://www.google.com/maps/search/?api=1&quer...  \n",
-            "3     https://www.google.com/maps/search/?api=1&quer...  \n",
-            "4     https://www.google.com/maps/search/?api=1&quer...  \n",
-            "...                                                 ...  \n",
-            "1138  https://www.google.com/maps/search/?api=1&quer...  \n",
-            "1139  https://www.google.com/maps/search/?api=1&quer...  \n",
-            "1140  https://www.google.com/maps/search/?api=1&quer...  \n",
-            "1141  https://www.google.com/maps/search/?api=1&quer...  \n",
-            "1142  https://www.google.com/maps/search/?api=1&quer...  \n",
-            "\n",
-            "[1143 rows x 6 columns]\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# Save CSV\n",
-        "df.to_csv(\"one_bite_pizza_rankings.csv\", index=False)"
-      ],
-      "metadata": {
-        "id": "rBP6zqfulSzM"
-      },
-      "execution_count": 14,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "from google.colab import files\n",
-        "files.download(\"one_bite_pizza_rankings.csv\")"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 17
-        },
-        "id": "QwLpr8oGlVHi",
-        "outputId": "8e6164b5-d9c4-42aa-ae88-5588f6d50807"
-      },
-      "execution_count": 15,
-      "outputs": [
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "<IPython.core.display.Javascript object>"
-            ],
-            "application/javascript": [
-              "\n",
-              "    async function download(id, filename, size) {\n",
-              "      if (!google.colab.kernel.accessAllowed) {\n",
-              "        return;\n",
-              "      }\n",
-              "      const div = document.createElement('div');\n",
-              "      const label = document.createElement('label');\n",
-              "      label.textContent = `Downloading \"${filename}\": `;\n",
-              "      div.appendChild(label);\n",
-              "      const progress = document.createElement('progress');\n",
-              "      progress.max = size;\n",
-              "      div.appendChild(progress);\n",
-              "      document.body.appendChild(div);\n",
-              "\n",
-              "      const buffers = [];\n",
-              "      let downloaded = 0;\n",
-              "\n",
-              "      const channel = await google.colab.kernel.comms.open(id);\n",
-              "      // Send a message to notify the kernel that we're ready.\n",
-              "      channel.send({})\n",
-              "\n",
-              "      for await (const message of channel.messages) {\n",
-              "        // Send a message to notify the kernel that we're ready.\n",
-              "        channel.send({})\n",
-              "        if (message.buffers) {\n",
-              "          for (const buffer of message.buffers) {\n",
-              "            buffers.push(buffer);\n",
-              "            downloaded += buffer.byteLength;\n",
-              "            progress.value = downloaded;\n",
-              "          }\n",
-              "        }\n",
-              "      }\n",
-              "      const blob = new Blob(buffers, {type: 'application/binary'});\n",
-              "      const a = document.createElement('a');\n",
-              "      a.href = window.URL.createObjectURL(blob);\n",
-              "      a.download = filename;\n",
-              "      div.appendChild(a);\n",
-              "      a.click();\n",
-              "      div.remove();\n",
-              "    }\n",
-              "  "
-            ]
-          },
-          "metadata": {}
-        },
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "<IPython.core.display.Javascript object>"
-            ],
-            "application/javascript": [
-              "download(\"download_62f624a9-870e-4fc1-8506-61f32b3fe73c\", \"one_bite_pizza_rankings.csv\", 111670)"
-            ]
-          },
-          "metadata": {}
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "hOJGy5yGlg2K"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ]
+/**
+ * Handles requests for the application home page.
+ */
+@Controller
+public class HomeController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+//	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "home";
+	}
+	
 }
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/controller/AdvertController.java =====
+package com.neu.naam.controller;
+
+import java.io.File;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
+import org.springframework.web.servlet.ModelAndView;
+import com.neu.naam.dao.AdvertDAO;
+import com.neu.naam.dao.CategoryDAO;
+import com.neu.naam.dao.UserDAO;
+import com.neu.naam.exception.AdvertException;
+import com.neu.naam.pojo.Advert;
+import com.neu.naam.pojo.Cart;
+import com.neu.naam.pojo.Category;
+import com.neu.naam.pojo.User;
+@Controller
+@RequestMapping("/advert/*")
+public class AdvertController {
+		
+		@Autowired
+		@Qualifier("advertDao")
+		AdvertDAO advertDao;
+		
+		@Autowired
+		@Qualifier("categoryDao")
+		CategoryDAO categoryDao;
+		
+		@Autowired
+		@Qualifier("userDao")
+		UserDAO userDao;
+		
+		@Autowired
+		ServletContext servletContext;
+
+		@RequestMapping(value = "/advert/add", method = RequestMethod.POST)
+		public ModelAndView addCategory(@ModelAttribute("advert") Advert advert, BindingResult result) throws Exception {
+
+			try {			
+				
+				User u = userDao.get(advert.getPostedBy());
+				advert.setUser(u);
+				advert = advertDao.create(advert);
+				
+	            
+	            for(Category c: advert.getCategories()){
+	            	c = categoryDao.get(c.getTitle());
+	            	c.getAdverts().add(advert);
+	            	categoryDao.update(c); //to maintain many to many relationship
+				
+	            }
+	            if (advert.getFilename().trim() != "" || advert.getFilename() != null) {
+					File directory;
+					String check = File.separator; // Checking if system is linux
+													// based or windows based by
+													// checking seprator used.
+					String path = null;
+					if (check.equalsIgnoreCase("\\")) {
+						path = servletContext.getRealPath("").replace("build\\", ""); // gives real path as Lab9/build/web/
+																					  // so we need to replace build in the path
+																							}
+
+					if (check.equalsIgnoreCase("/")) {
+						path = servletContext.getRealPath("").replace("build/", "");
+						path += "/"; // Adding trailing slash for Mac systems.
+					}
+					directory = new File(path + "\\" + advert.getFilename());
+					boolean temp = directory.exists();
+					if (!temp) {
+						temp = directory.mkdir();
+					}
+					if (temp) {
+						// We need to transfer to a file
+						CommonsMultipartFile photoInMemory = advert.getPhoto();
+
+						String fileName = photoInMemory.getOriginalFilename();
+						// could generate file names as well
+
+						File localFile = new File(directory.getPath(), fileName);
+
+						// move the file from memory to the file
+
+						photoInMemory.transferTo(localFile);
+						advert.setFilename(localFile.getPath());
+						System.out.println("File is stored at" + localFile.getPath());
+						System.out.print("registerNewUser");
+						Advert a = advertDao.create(advert);
+
+					} else {
+						System.out.println("Failed to create directory!");
+					}
+					
+				}
+				
+	            return new ModelAndView("advert-success", "advert", advert);
+	            
+			} catch (AdvertException e) {
+				System.out.println(e.getMessage());
+				return new ModelAndView("error", "errorMessage", "error while login");
+			}
+			
+			
+		}
+		
+		@RequestMapping(value = "/advert/list", method = RequestMethod.GET)
+		public ModelAndView addCategory(HttpServletRequest request) throws Exception {
+
+			ModelAndView mav = new ModelAndView("advert-list");
+			List<Advert> adverts = advertDao.list();
+			mav.addObject("adverts", adverts);
+	        mav.addObject("cart", new Cart());
+	        return mav;
+			
+		}
+		
+		@RequestMapping(value = "/advert/sellerlist", method = RequestMethod.GET)
+		public ModelAndView addCategories(HttpServletRequest request) throws Exception {
+
+			try {			
+				
+				List<Advert> adverts = advertDao.list();
+				return new ModelAndView("seller-advert-list", "adverts", adverts);
+				
+			} catch (AdvertException e) {
+				System.out.println(e.getMessage());
+				return new ModelAndView("error", "errorMessage", "error while login");
+			}
+			
+			
+		}
+
+		@RequestMapping(value="/advert/add", method = RequestMethod.GET)
+		public ModelAndView initializeForm(HttpServletRequest request) throws Exception {		
+			ModelAndView mv = new ModelAndView();
+			mv.addObject("categories", categoryDao.list());			
+			mv.addObject("advert", new Advert());
+			mv.setViewName("advert-form");
+			return mv;
+		}
+
+
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/controller/BillController.java =====
+package com.neu.naam.controller;
+
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.web.bind.ServletRequestUtils;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
+import org.springframework.web.servlet.mvc.AbstractController;
+
+import com.neu.naam.dao.AdvertDAO;
+import com.neu.naam.dao.CartDAO;
+import com.neu.naam.dao.CategoryDAO;
+import com.neu.naam.dao.DAO;
+import com.neu.naam.dao.UserDAO;
+import com.neu.naam.pojo.Cart;
+import com.neu.naam.pojo.PDFView;
+import com.neu.naam.pojo.User;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+
+@Controller
+@RequestMapping("/cart/*")
+public class BillController extends PDFView{
+
+	//private static final Logger logger = LoggerFactory.getLogger(BillController.class);
+	
+	@Autowired
+	@Qualifier("advertDao")
+	AdvertDAO advertDao;
+	
+	@Autowired
+	@Qualifier("categoryDao")
+	CategoryDAO categoryDao;
+	
+	@Autowired
+	@Qualifier("userDao")
+	UserDAO userDao;
+	
+	@Autowired
+	@Qualifier("cartDao")
+	CartDAO cartDao;
+	
+	@Autowired
+	ServletContext servletContext;
+	
+	
+	@RequestMapping(value = "/cart/checkout", method = RequestMethod.POST)
+	public ModelAndView showPdfReport(@ModelAttribute("cart") Cart cart,
+									  ModelMap model,
+			                          BindingResult result, 
+			                          HttpServletRequest request) throws Exception
+	{
+		List<Cart> view=cartDao.list();
+		model.addAttribute("cartitems", view);
+		
+		//return new ModelAndView("view","cartitems",view);
+		View v = new PDFView();
+		return new ModelAndView(v);
+	}
+	
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/controller/CartController.java =====
+package com.neu.naam.controller;
+
+import java.util.List;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.neu.naam.dao.AdvertDAO;
+import com.neu.naam.dao.CategoryDAO;
+import com.neu.naam.dao.DAO;
+import com.neu.naam.dao.UserDAO;
+import com.neu.naam.dao.CartDAO;
+import com.neu.naam.pojo.Advert;
+import com.neu.naam.pojo.Cart;
+import com.neu.naam.pojo.User;
+
+@Controller
+@RequestMapping("/cart/*")
+public class CartController extends DAO{
+
+	@Autowired
+	@Qualifier("advertDao")
+	AdvertDAO advertDao;
+	
+	@Autowired
+	@Qualifier("categoryDao")
+	CategoryDAO categoryDao;
+	
+	@Autowired
+	@Qualifier("userDao")
+	UserDAO userDao;
+	
+	@Autowired
+	@Qualifier("cartDao")
+	CartDAO cartDao;
+	
+	@Autowired
+	ServletContext servletContext;
+	
+	
+	
+	@RequestMapping(value = "/cart/insert", method = RequestMethod.POST)
+	public ModelAndView addCategory(@ModelAttribute("cart") Cart cart, BindingResult result, HttpServletRequest request) throws Exception {
+		HttpSession session = (HttpSession) request.getSession();
+		User u = (User)session.getAttribute("user");
+		cart.setUser(u);
+		u.setCart(cart);
+		Cart cd=null;
+//		Cart c = cartDao.insert(cart);
+//		User user1 = cartDao.update(u);
+//		 getSession().update(u);
+		 List<Cart> c=cartDao.list();
+		 int i=0;
+		 Cart cw = null;
+		 for(Cart cc:c){
+			 if(u.getPersonID()==cc.getId()){
+				 cw = cartDao.updateCart(cc);
+				 i=1;
+				 return new ModelAndView("user-cart","c",cw);
+			 }
+		 }
+	 if (i==0){
+		  cd = cartDao.insert(cart);
+	 }
+	
+		return new ModelAndView("user-cart","c",cd);
+	}
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/controller/CategoryController.java =====
+package com.neu.naam.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.servlet.ModelAndView;
+import com.neu.naam.dao.CategoryDAO;
+import com.neu.naam.exception.CategoryException;
+import com.neu.naam.pojo.Category;
+import com.neu.naam.validator.CategoryValidator;
+
+@Controller
+@RequestMapping("/category/*")
+public class CategoryController {
+
+		@Autowired
+		@Qualifier("categoryValidator")
+		CategoryValidator categoryValidator;
+		
+		@Autowired
+		@Qualifier("categoryDao")
+		CategoryDAO categoryDAO;
+
+		@InitBinder
+		private void initBinder(WebDataBinder binder) {
+			binder.setValidator(categoryValidator);
+		}
+
+		@RequestMapping(value = "/category/add", method = RequestMethod.POST)
+		public ModelAndView addCategory(@ModelAttribute("category") Category category, BindingResult result) throws Exception {
+			
+			categoryValidator.validate(category, result);
+			
+			if (result.hasErrors()) {
+				return new ModelAndView("category-form", "category", category);
+			}
+
+			try {				
+				category = categoryDAO.create(category.getTitle());
+			} catch (CategoryException e) {
+				System.out.println(e.getMessage());
+				return new ModelAndView("error", "errorMessage", "error while login");
+			}
+			return new ModelAndView("category-success", "category", category);
+			
+		}
+
+		@RequestMapping(value="/category/add", method = RequestMethod.GET)
+		public ModelAndView initializeForm() throws Exception {			
+			return new ModelAndView("category-form", "category", new Category());
+		}
+
+
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/controller/LogoutController.java =====
+package com.neu.naam.controller;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.neu.naam.dao.AdvertDAO;
+import com.neu.naam.dao.CategoryDAO;
+import com.neu.naam.dao.UserDAO;
+
+
+@Controller
+@RequestMapping("/advert/*")
+public class LogoutController {
+
+	@Autowired
+	@Qualifier("advertDao")
+	AdvertDAO advertDao;
+	
+	@Autowired
+	@Qualifier("categoryDao")
+	CategoryDAO categoryDao;
+	
+	@Autowired
+	@Qualifier("userDao")
+	UserDAO userDao;
+	
+	@Autowired
+	ServletContext servletContext;
+	
+	@RequestMapping(value = "/advert/logout", method = RequestMethod.POST)
+	public String logout(HttpServletRequest request){
+        HttpSession httpSession = request.getSession();
+        httpSession.invalidate();
+        return "logout";
+    }
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/controller/UserController.java =====
+package com.neu.naam.controller;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.SimpleEmail;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+import com.neu.naam.dao.UserDAO;
+import com.neu.naam.exception.UserException;
+import com.neu.naam.pojo.User;
+import com.neu.naam.validator.UserValidator;
+
+@Controller
+@RequestMapping("/user/*")
+public class UserController {
+
+	
+	@Autowired
+	@Qualifier("userDao")
+	UserDAO userDao;
+
+	@Autowired
+	@Qualifier("userValidator")
+	UserValidator validator;
+
+	@InitBinder
+	private void initBinder(WebDataBinder binder) {
+		binder.setValidator(validator);
+	}
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	protected String goToUserHome(HttpServletRequest request) throws Exception {
+		return "user-home";
+	}
+	
+	
+	@RequestMapping(value = "/user/login", method = RequestMethod.POST)
+	protected String loginUser(HttpServletRequest request) throws Exception {
+
+		HttpSession session = (HttpSession) request.getSession();
+		
+		try {
+
+			System.out.print("loginUser");
+
+			User u = userDao.get(request.getParameter("username"), request.getParameter("password"));
+			
+			if(u == null){
+				System.out.println("UserName/Password does not exist");
+				session.setAttribute("errorMessage", "UserName/Password does not exist");
+				return "error";
+			}
+			
+			else if(u.getUsertype().equals("Buyer")){
+				session.setAttribute("user", u);
+				return "buyer-home";
+			}
+			
+			else if(!(u.getUsertype().equals("Buyer"))&&!(u.getUsertype().equals("Seller"))){
+				session.setAttribute("errorMessage", "UserName/Password does not exist");
+				return "error";
+			}
+			
+			else{
+				session.setAttribute("user", u);
+				return "user-home";
+			}
+			
+			//return "user-home";
+
+		} catch (UserException e) {
+			System.out.println("Exception: " + e.getMessage());
+			session.setAttribute("errorMessage", "error while login");
+			return "error";
+		}
+
+	}
+	
+	@RequestMapping(value = "/user/register", method = RequestMethod.GET)
+	protected ModelAndView registerUser() throws Exception {
+		System.out.print("registerUser");
+
+		ModelAndView mav = new ModelAndView("register-user");
+		Map<String,String> usertype = new LinkedHashMap<String,String>();
+		usertype.put("Buyer", "Buyer");
+		usertype.put("Seller", "Seller");
+		
+		mav.addObject("usertype", usertype);
+        mav.addObject("user", new User());
+        return mav;
+		//return new ModelAndView("", "user", new User());
+
+	}
+	
+	@RequestMapping(value = "/user/register", method = RequestMethod.POST)
+	protected ModelAndView registerNewUser(HttpServletRequest request,  @ModelAttribute("user") User user, BindingResult result) throws Exception {
+
+		validator.validate(user, result);
+
+		if (result.hasErrors()) {
+			ModelAndView mav = new ModelAndView("register-user");
+			Map<String,String> usertype = new LinkedHashMap<String,String>();
+			usertype.put("Buyer", "Buyer");
+			usertype.put("Seller", "Seller");
+			
+			mav.addObject("usertype", usertype);
+	        mav.addObject("user", user);
+	        return mav;
+			//return new ModelAndView("register-user", "user", user);
+		}
+
+		try {
+
+			System.out.print("registerNewUser");
+
+			User u = userDao.register(user);
+			
+			request.getSession().setAttribute("user", u);
+			Email email= new SimpleEmail();
+	           email.setHostName("smtp.googlemail.com");
+	           email.setSmtpPort(465);
+	           email.setAuthentication("laaqq1414@gmail.com", "qQ1!1111");
+	           email.setSSLOnConnect(true);
+	           email.setFrom("doNotReply"+user.getEmail().getEmailAddress());
+	           email.setSubject("Sign Up Successful");
+	           email.setMsg("Welcome to the Store\n\n Your account has been successfully created.");
+	           email.addTo(user.getEmail().getEmailAddress());
+	           email.send();
+			
+			return new ModelAndView("account-success", "user", u);
+
+		} catch (UserException e) {
+			System.out.println("Exception: " + e.getMessage());
+			return new ModelAndView("error", "errorMessage", "error while login");
+		}
+	}
+
+		protected Map referenceData(HttpServletRequest request) throws Exception {
+
+		Map referenceData = new HashMap();
+
+		Map<String,String> usertype = new LinkedHashMap<String,String>();
+		usertype.put("Buyer", "Buyer");
+		usertype.put("Seller", "Seller");
+		referenceData.put("usertype", usertype);
+		
+		return referenceData;
+	}
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/dao/AdvertDAO.java =====
+package com.neu.naam.dao;
+
+//import java.util.HashSet;
+import java.util.List;
+//import java.util.Set;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+
+import com.neu.naam.exception.AdvertException;
+import com.neu.naam.pojo.Advert;
+//import com.neu.naam.pojo.Category;
+
+public class AdvertDAO extends DAO {
+
+    public Advert create(Advert advert)
+            throws AdvertException {
+        try {
+            begin();            
+            getSession().save(advert);     
+            commit();
+            return advert;
+        } catch (HibernateException e) {
+            rollback();
+            //throw new AdException("Could not create advert", e);
+            throw new AdvertException("Exception while creating advert: " + e.getMessage());
+        }
+    }
+
+    public void delete(Advert advert)
+            throws AdvertException {
+        try {
+            begin();
+            getSession().delete(advert);
+            commit();
+        } catch (HibernateException e) {
+            rollback();
+            throw new AdvertException("Could not delete advert", e);
+        }
+    }
+    
+    public List<Advert> list() throws AdvertException{
+    	
+    	try {
+            begin();
+            Query query = getSession().createQuery("from Advert");
+            List<Advert> listOfAdverts = query.list();
+            commit();
+            return listOfAdverts;
+        } catch (HibernateException ex) {
+            rollback();
+            throw new AdvertException("Could not delete advert", ex);
+        }
+    	
+    }
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/dao/CartDAO.java =====
+package com.neu.naam.dao;
+
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+
+import com.neu.naam.exception.CartException;
+import com.neu.naam.exception.CategoryException;
+import com.neu.naam.pojo.Advert;
+import com.neu.naam.pojo.Cart;
+import com.neu.naam.pojo.Category;
+import com.neu.naam.pojo.User;
+
+public class CartDAO extends DAO {
+	
+	public CartDAO(){
+	
+	}
+
+	public Cart insert(Cart cart) throws CartException {
+		try{
+			begin();            
+			getSession().save(cart);     
+            commit();
+            return cart;
+		} catch (HibernateException ex){
+			rollback();
+            throw new CartException("Unable to save the cart\n Exception: ", ex);
+		}
+	}
+	
+	public void update(Cart cart) throws CategoryException {
+        try {
+            begin();
+            getSession().update(cart);
+            commit();
+        } catch (HibernateException ex) {
+            rollback();
+            throw new CategoryException("Unable to save the cart\nHibernate Exception: ", ex);
+        }
+    }
+	
+	public User update(User user) throws CategoryException {
+        try {
+            begin();
+            getSession().update(user);
+            commit();
+        } catch (HibernateException e) {
+            rollback();
+            throw new CategoryException("Could not save the user", e);
+        }
+        return user;
+    }
+	
+	public List<Cart> list(){
+		begin();
+		Query q = getSession().createQuery("from Cart");
+		List<Cart> cart1 = q.list();
+		commit();
+		return cart1;
+	}
+	
+	public Cart updateCart(Cart cart) throws CategoryException {
+        try {
+            begin();
+            getSession().update(cart);
+            commit();
+            return cart;
+        } catch (HibernateException e) {
+            rollback();
+            throw new CategoryException("Could not save the cart", e);
+        }
+    }
+	
+
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/dao/CategoryDAO.java =====
+package com.neu.naam.dao;
+
+import java.util.List;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import com.neu.naam.exception.CategoryException;
+import com.neu.naam.pojo.Category;
+
+public class CategoryDAO extends DAO {
+
+    public Category get(String title) throws CategoryException {
+        try {
+            begin();
+            Query query=getSession().createQuery("from Category where title= :title");
+            query.setString("title",title);
+            Category category=(Category)query.uniqueResult();
+            commit();
+            return category;
+        } catch (HibernateException e) {
+            rollback();
+            throw new CategoryException("Unable to obtain the category " + title + " " + e.getMessage());
+        }
+    }
+
+    public List<Category> list() throws CategoryException {
+        try {
+            begin();
+            Query query = getSession().createQuery("from Category");
+            List<Category> categoryList = query.list();
+            commit();
+            return categoryList;
+        } catch (HibernateException e) {
+            rollback();
+            throw new CategoryException("Unable to list the categories", e);
+        }
+    }
+
+    public Category create(String title) throws CategoryException {
+        try {
+            begin();
+            Category category = new Category(title);
+            getSession().save(category);
+            commit();
+            return category;
+        } catch (HibernateException e) {
+            rollback();
+            
+            throw new CategoryException("Unable to create a category: " + e.getMessage());
+        }
+    }
+
+    public void update(Category category) throws CategoryException {
+        try {
+            begin();
+            getSession().update(category);
+            commit();
+        } catch (HibernateException e) {
+            rollback();
+            throw new CategoryException("Could not save the category", e);
+        }
+    }
+
+    public void delete(Category category) throws CategoryException {
+        try {
+            begin();
+            getSession().delete(category);
+            commit();
+        } catch (HibernateException e) {
+            rollback();
+            throw new CategoryException("Could not delete the category", e);
+        }
+    }
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/dao/DAO.java =====
+package com.neu.naam.dao;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class DAO {
+	
+	private static final Logger log = Logger.getAnonymousLogger();
+    
+	private static final ThreadLocal sessionThread = new ThreadLocal();
+    private static final SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+
+    protected DAO() {
+    }
+
+    public static Session getSession()
+    {
+        Session session = (Session) DAO.sessionThread.get();
+        
+        if (session == null)
+        {
+            session = sessionFactory.openSession();
+            DAO.sessionThread.set(session);
+        }
+        return session;
+    }
+
+    protected void begin() {
+        getSession().beginTransaction();
+    }
+
+    protected void commit() {
+        getSession().getTransaction().commit();
+    }
+
+    protected void rollback() {
+        try {
+            getSession().getTransaction().rollback();
+        } catch (HibernateException e) {
+            log.log(Level.WARNING, "Cannot rollback", e);
+        }
+        try {
+            getSession().close();
+        } catch (HibernateException e) {
+            log.log(Level.WARNING, "Cannot close", e);
+        }
+        DAO.sessionThread.set(null);
+    }
+
+    public static void close() {
+        getSession().close();
+        DAO.sessionThread.set(null);
+    }
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/dao/UserDAO.java =====
+package com.neu.naam.dao;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import com.neu.naam.exception.UserException;
+import com.neu.naam.pojo.Email;
+import com.neu.naam.pojo.User;
+
+public class UserDAO extends DAO {
+
+	public UserDAO() {
+	}
+
+	public User get(String username, String password) throws UserException {
+		try {
+			begin();
+			Query q = getSession().createQuery("from User where username = :username and password = :password");
+			q.setString("username", username);
+			q.setString("password", password);
+			User user = (User) q.setMaxResults(1).uniqueResult();
+			//System.out.println(user.getUsertype());
+			commit();
+			return user;
+		} catch (HibernateException e) {
+			rollback();
+			throw new UserException("Could not get user " + username, e);
+		}
+	}
+	
+	public User get(int userId) throws UserException {
+		try {
+			begin();
+			Query q = getSession().createQuery("from User where personID= :personID");
+			q.setInteger("personID", userId);		
+			User user = (User) q.setMaxResults(1).uniqueResult();
+			commit();
+			return user;
+		} catch (HibernateException e) {
+			rollback();
+			throw new UserException("Could not get user " + userId, e);
+		}
+	}
+
+	public User register(User u)
+			throws UserException {
+		try {
+			begin();
+			System.out.println("inside DAO");
+
+			Email email = new Email(u.getEmail().getEmailAddress());
+			User user = new User(u.getUsername(), u.getPassword(), u.getUsertype());
+
+			user.setFirstName(u.getFirstName());
+			user.setLastName(u.getLastName());
+			user.setEmail(email);
+			email.setUser(user);
+			getSession().save(user);
+			commit();
+			return user;
+
+		} catch (HibernateException e) {
+			rollback();
+			throw new UserException("Exception while creating user: " + e.getMessage());
+		}
+	}
+
+	public void delete(User user) throws UserException {
+		try {
+			begin();
+			getSession().delete(user);
+			commit();
+		} catch (HibernateException e) {
+			rollback();
+			throw new UserException("Could not delete user " + user.getUsername(), e);
+		}
+	}
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/exception/AdvertException.java =====
+package com.neu.naam.exception;
+
+public class AdvertException extends Exception
+{
+	public AdvertException(String message)
+	{
+		super("AdvertException-"+ message);
+	}
+	
+	public AdvertException(String message, Throwable cause)
+	{
+		super("AdvertException-"+ message,cause);
+	}
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/exception/CartException.java =====
+package com.neu.naam.exception;
+
+public class CartException extends Exception
+{
+	public CartException(String message)
+	{
+		super("CartException-"+ message);
+	}
+	
+	public CartException(String message, Throwable cause)
+	{
+		super("CartException-"+ message,cause);
+	}
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/exception/CategoryException.java =====
+package com.neu.naam.exception;
+
+public class CategoryException extends Exception {
+
+	public CategoryException(String message)
+	{
+		super("CategoryException-"+message);
+	}
+	
+	public CategoryException(String message, Throwable cause)
+	{
+		super("CategoryException-"+message,cause);
+	}
+	
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/exception/UserException.java =====
+package com.neu.naam.exception;
+
+public class UserException extends Exception {
+
+	public UserException(String message)
+	{
+		super("UserException-"+message);
+	}
+	
+	public UserException(String message, Throwable cause)
+	{
+		super("UserException-"+message,cause);
+	}
+	
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/interceptor/Interceptor.java =====
+package com.neu.naam.interceptor;
+
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+import com.neu.naam.pojo.User;
+
+public class Interceptor extends  HandlerInterceptorAdapter {
+
+	 private String signout;
+	    
+	   
+	    
+	    public String getsignout() {
+		return signout;
+	}
+
+	public void setsignout(String signout) {
+		this.signout = signout;
+	}
+
+		/**
+	     * This implementation always returns <code>true</code>.
+	     */
+	    @Override
+	    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+	        throws Exception {
+	        
+	        System.out.println("Inside User Interceptor");
+	        HttpSession session = request.getSession();
+	        if(session != null){
+	            
+	        
+	        
+	        Object o = session.getAttribute("user");
+	        if(o != null){
+	            
+	        try{
+	            User user = (User) o;
+	            return true;
+	        }
+	        catch(Exception e){
+	            System.out.println("Exception in Recruiterinterceptor");
+	            e.printStackTrace();
+	        }}else{
+	            response.sendRedirect(signout);
+	            return false;
+	        }
+	        
+	        }
+	        
+	        response.sendRedirect(signout);
+	        return false;
+	    }
+
+	    /**
+	     * This implementation is empty.
+	     */
+	    @Override
+	    public void postHandle(
+	            HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)
+	            throws Exception {
+	        super.postHandle(request, response, handler, modelAndView);
+	    }    
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/Advert.java =====
+package com.neu.naam.pojo;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
+@Entity
+@Table(name="advert_table")
+public class Advert {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="advertID", unique = true, nullable = false)
+    private long id;
+	
+	@Column(name="title")
+    private String title;
+	
+	@Column(name="message")
+    private String message;
+	
+	@Column(name = "filename")
+	private String filename; 
+	
+	@Column(name = "price")
+	private Float price;
+	
+	public Float getPrice() {
+		return price;
+	}
+
+	public void setPrice(Float price) {
+		this.price = price;
+	}
+
+	@ManyToOne
+	private User user;
+	
+	@ManyToMany(mappedBy="adverts")
+	private Set<Category> categories = new HashSet<Category>();
+	
+	@ManyToMany(mappedBy="adverts")
+	private Set<Cart> cart = new HashSet<Cart>();
+	
+	@Transient
+	int postedBy;
+	
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
+		String name="";
+		for(int i=filename.length()-1;i>-1&&(int)filename.charAt(i)!=92;i--) {
+			name+=filename.charAt(i);
+		}
+		StringBuilder input1 = new StringBuilder(); 
+		  
+        // append a string into StringBuilder input1 
+        input1.append(name); 
+  
+        // reverse StringBuilder input1 
+        input1 = input1.reverse(); 
+		this.filename = input1.toString();
+	}
+
+	public CommonsMultipartFile getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(CommonsMultipartFile photo) {
+		this.photo = photo;
+	}
+
+	@Transient
+	private CommonsMultipartFile photo;
+
+    public Advert(String title, String message, User user, Category catergory, Cart cart) {
+        this.title = title;
+        this.message = message;
+        this.user = user;      
+        this.categories.add(catergory); 
+        this.cart.add(cart);
+    }
+
+    public Advert() {
+    }
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Set<Category> getCategories() {
+		return categories;
+	}
+
+	public void setCategories(Set<Category> categories) {
+		this.categories = categories;
+	}
+
+	public int getPostedBy() {
+		return postedBy;
+	}
+
+	public void setPostedBy(int postedBy) {
+		this.postedBy = postedBy;
+	}
+
+    
+  
+
+   
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/Cart.java =====
+package com.neu.naam.pojo;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
+
+@Entity
+@Table(name="cart_table")
+@PrimaryKeyJoinColumn(name = "personID")
+public class Cart{
+
+	@Id
+	@GeneratedValue(generator = "generator")
+	@GenericGenerator(name = "generator", strategy = "foreign", parameters = @Parameter(name = "property", value = "user"))
+	@Column(name = "cartID", unique = true, nullable = false)
+	private long id;
+	
+	@OneToOne
+	@PrimaryKeyJoinColumn
+	private User user;
+	
+	@ManyToMany
+    @JoinTable (
+       name="cart_advert_table",
+       joinColumns = {@JoinColumn(name="cartID", nullable = false, updatable = false, referencedColumnName="cartID")},
+       inverseJoinColumns = {@JoinColumn(name="advertID", referencedColumnName="advertID" )}
+    )
+	private Set<Advert> adverts = new HashSet<Advert>();
+	
+	@Column(name="title")
+	private String title;
+	
+	@Column(name="category")
+	private String category;
+	
+	@Column(name="filename")
+	private String filename;
+	
+	@Column(name="totalprice")
+	private String totalprice;
+
+	public Cart(){
+		
+	}
+	
+	public Cart(String title, String category, String filename, String totalprice) {
+		this.title = title;
+		this.category = category;
+		this.filename = filename;
+		this.totalprice = totalprice;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Set<Advert> getAdverts() {
+		return adverts;
+	}
+
+	public void setAdverts(Set<Advert> adverts) {
+		this.adverts = adverts;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+
+	public String getTotalprice() {
+		return totalprice;
+	}
+
+	public void setTotalprice(String totalprice) {
+		this.totalprice = totalprice;
+	}
+	
+	
+	
+	
+	
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/Category.java =====
+package com.neu.naam.pojo;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="category_table")
+public class Category {
+
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="categoryID", unique = true, nullable = false)
+    private long categoryId;
+	
+	@Column(name="title", unique=true, nullable = false)
+    private String title;
+    
+	@ManyToMany
+    @JoinTable (
+       name="category_advert_table",
+       joinColumns = {@JoinColumn(name="categoryID", nullable = false, updatable = false, referencedColumnName="categoryID")},
+       inverseJoinColumns = {@JoinColumn(name="advertID", referencedColumnName="advertID" )}
+    )
+	private Set<Advert> adverts = new HashSet<Advert>();
+
+    public Category(String title) {
+        this.title = title;
+    }
+
+    public Category() {
+    }
+
+	public long getCategoryId() {
+		return categoryId;
+	}
+
+	public void setCategoryId(long categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public Set<Advert> getAdverts() {
+		return adverts;
+	}
+
+	public void setAdverts(Set<Advert> adverts) {
+		this.adverts = adverts;
+	}
+
+	@Override 
+	public String toString(){
+		return title;
+	}
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/Email.java =====
+package com.neu.naam.pojo;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+import org.hibernate.annotations.Parameter;
+import org.hibernate.annotations.GenericGenerator;
+
+
+@Entity
+@Table(name = "email_table")
+public class Email {
+	
+	@Id
+	@GeneratedValue(generator = "generator")
+	@GenericGenerator(name = "generator", strategy = "foreign", parameters = @Parameter(name = "property", value = "user"))
+	@Column(name = "emailID", unique = true, nullable = false)
+	private long id;
+
+	@Column(name = "email_address")
+	private String emailAddress;
+
+	@OneToOne
+	@PrimaryKeyJoinColumn
+	private User user;
+
+	public Email() {
+	}
+
+	public Email(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+
+
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/PDFView.java =====
+package com.neu.naam.pojo; 
+
+import java.awt.Color;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.view.document.AbstractPdfView;
+
+import com.lowagie.text.Document;
+import com.lowagie.text.Font;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.pdf.PdfPCell;
+import com.lowagie.text.pdf.PdfPTable;
+import com.lowagie.text.pdf.PdfWriter;
+
+public class PDFView extends AbstractPdfView {
+
+	@Override
+	protected void buildPdfDocument(Map<String, Object> model, Document pdfdoc, PdfWriter pdfwriter, HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
+		Font  myFont = new Font(Font.HELVETICA, 20, Font.BOLDITALIC, Color.BLACK);
+		
+		List<Cart> cartlist = (List<Cart>) model.get("cartitems");
+		Paragraph title = new Paragraph("Thank you for shopping at the Store", myFont);
+		
+		Phrase producttitle = new Phrase("Below you will find a summary of the item you have purchased");
+		String inp="";
+		for (Cart cart_item : cartlist) {
+			inp+=cart_item.getTitle()+cart_item.getCategory();
+		}
+		String hash=makeSHA1Hash(inp);
+		Phrase thank = new Phrase("Transaction code: "+ hash +"\n\nThank you for shopping with us");
+		
+		PdfPTable table = new PdfPTable(3);
+        table.setWidthPercentage(100.0f);
+        float width[]=new float[] {3.0f, 2.0f, 1.0f};
+        table.setWidths(width);
+        table.setSpacingBefore(12);
+		
+		PdfPCell cell = new PdfPCell();
+        cell.setBackgroundColor(Color.gray);
+        cell.setPadding(4);
+		
+        cell.setPhrase(new Phrase("Product Title", myFont));
+        table.addCell(cell);
+         
+        cell.setPhrase(new Phrase("Category", myFont));
+        table.addCell(cell);
+ 
+        cell.setPhrase(new Phrase("Price", myFont));
+        table.addCell(cell);
+        
+        for (Cart cart_item : cartlist) {
+            table.addCell(cart_item.getTitle());
+            table.addCell(cart_item.getCategory());
+            table.addCell(String.valueOf(cart_item.getTotalprice()));
+        }
+        
+		pdfdoc.add(title);
+		pdfdoc.add(producttitle);
+		pdfdoc.add(table);
+		pdfdoc.add(thank);
+	}
+
+	public String makeSHA1Hash(String input)
+            throws NoSuchAlgorithmException, UnsupportedEncodingException
+        {
+            MessageDigest md = MessageDigest.getInstance("SHA1");
+            md.reset();
+            byte[] buffer = input.getBytes("UTF-8");
+            md.update(buffer);
+            byte[] digest = md.digest();
+
+            String hexStr = "";
+            for (int i = 0; i < digest.length; i++) {
+                hexStr +=  Integer.toString( ( digest[i] & 0xff ) + 0x100, 16).substring( 1 );
+            }
+            return hexStr;
+        }
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/Person.java =====
+package com.neu.naam.pojo;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="person_table")
+@Inheritance(strategy=InheritanceType.JOINED) //table per subclass
+public class Person {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "personID", unique=true, nullable = false)
+	private long personID;
+	
+	@Column(name = "firstName")
+	private String firstName;
+	
+	@Column(name ="lastName")
+	private String lastName;
+	
+	public Person(){
+		
+	}
+	
+	public long getPersonID() {
+		return personID;
+	}
+
+	public void setPersonID(long personID) {
+		this.personID = personID;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/pojo/User.java =====
+package com.neu.naam.pojo;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user_table")
+@PrimaryKeyJoinColumn(name = "personID")
+public class User extends Person {
+
+	@Column(name = "userName")
+	private String username;
+
+	@Column(name = "password")
+	private String password;
+
+	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+	private Email email;
+	
+	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+	private Cart cart;
+	
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
+	@Column(name = "usertype")
+	private String usertype;
+	
+	public User(String username, String password, String usertype) {
+		this.username = username;
+		this.password = password;
+		this.usertype = usertype;
+	}
+
+	public User() {
+	
+	}
+
+	public String getUsertype() {
+		return usertype;
+	}
+
+	public void setUsertype(String usertype) {
+		this.usertype = usertype;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Email getEmail() {
+		return email;
+	}
+
+	public void setEmail(Email email) {
+		this.email = email;
+	}
+
+	
+}
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/validator/AdvertValidator.java =====
+package com.neu.naam.validator;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.springframework.stereotype.Component;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.neu.naam.pojo.Advert;
+
+@Component
+public class AdvertValidator implements Validator {
+
+	public boolean supports(Class aClass) {
+		return aClass.equals(Advert.class);
+	}
+
+	private Pattern pattern;  
+	 private Matcher matcher;  
+	
+	 private static final 
+	 String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"  
+			   + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";    
+	 String STRING_PATTERN = "[a-zA-Z]+";
+	
+	public void validate(Object obj, Errors errors) {
+		Advert newAdvert = (Advert) obj;
+
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "title", "error.invalid.title", "Title Required");
+		 if (!(newAdvert.getTitle() != null && newAdvert.getTitle().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(newAdvert.getTitle());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("title", "title.containNonChar",  
+			      "Invalid title");  
+			   }  
+			  }
+		 
+		 ValidationUtils.rejectIfEmptyOrWhitespace(errors, "filename", "error.invalid.filename", "Filename Required");
+		 if (!(newAdvert.getFilename() != null && newAdvert.getFilename().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(newAdvert.getFilename());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("filename", "filename.containNonChar",  
+			      "Invalid File-Name");  
+			   }  
+			  }
+		 
+		 ValidationUtils.rejectIfEmptyOrWhitespace(errors, "message", "error.invalid.filename", "Product Description Required");
+		 if (!(newAdvert.getMessage() != null && newAdvert.getMessage().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(newAdvert.getMessage());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("message", "message.containNonChar",  
+			      "Invalid product-description");  
+			   }  
+			  }
+	}
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/validator/CategoryValidator.java =====
+package com.neu.naam.validator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.neu.naam.dao.CategoryDAO;
+import com.neu.naam.exception.CategoryException;
+import com.neu.naam.pojo.Category;
+
+@Component
+public class CategoryValidator implements Validator {
+
+	@Autowired
+	@Qualifier("categoryDao")
+	CategoryDAO categoryDAO;
+	
+	public boolean supports(Class aClass) {
+		return Category.class.equals(aClass);
+	}
+
+	public void validate(Object obj, Errors errors) {
+		Category newCategory = (Category) obj;
+
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "title", "error.invalid.category", "Category Required");
+		
+		if (errors.hasErrors()) {
+            return;//Skip the rest of the validation rules
+        }
+        
+	
+		try {
+			Category c = categoryDAO.get(newCategory.getTitle());
+			if(c !=null)
+				errors.rejectValue("title", "error.invalid.category", "Category already Exists");
+			
+		} catch (CategoryException e) {
+			System.err.println("Exception in Category Validator");
+		}
+		
+		
+		
+	
+	}
+}
+
+
+===== FILE: naam/naam/src/main/java/com/neu/naam/validator/UserValidator.java =====
+package com.neu.naam.validator;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.neu.naam.pojo.User;
+
+public class UserValidator implements Validator {
+
+	public boolean supports(Class aClass) {
+		return aClass.equals(User.class);
+	}
+
+	 private Pattern pattern;  
+	 private Matcher matcher;  
+	
+	 private static final 
+	 String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"  
+			   + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";    
+	 String STRING_PATTERN = "[a-zA-Z]+";  
+	
+			 
+			 
+	public void validate(Object obj, Errors errors) {
+		User user = (User) obj;
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "firstName", "error.invalid.user", "First Name Required");
+		 if (!(user.getFirstName() != null && user.getFirstName().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(user.getFirstName());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("firstName", "firstName.containNonChar",  
+			      "Invalid first name");  
+			   }  
+			  }  
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastName", "error.invalid.user", "Last Name Required");
+		if (!(user.getLastName() != null && user.getLastName().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(user.getLastName());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("lastName", "lastName.containNonChar",  
+			      "Invalid last name");  
+			   }  
+			  } 
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "username", "error.invalid.user", "User Name Required");
+		if (!(user.getUsername() != null && user.getUsername().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(user.getUsername());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("username", "username.containNonChar",  
+			      "Invalid username");  
+			   }  
+			  }
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "error.invalid.password", "Password Required");
+		if (!(user.getPassword() != null && user.getPassword().isEmpty())) {  
+			   pattern = Pattern.compile(STRING_PATTERN);  
+			   matcher = pattern.matcher(user.getPassword());  
+			   if (!matcher.matches()) {  
+			    errors.rejectValue("password", "password.containNonChar",  
+			      "Invalid password");  
+			   }  
+			  }
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email.emailAddress", "error.invalid.email.emailAddress",
+				"Enter a valid email address");
+		 
+		if("NONE".equals(user.getUsertype())){
+			errors.rejectValue("usertype", "error.invalid.usertype","Select a user type");
+		}
+		// check if user exists
+		
+	}
+}
+
