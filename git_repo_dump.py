@@ -5,8 +5,90 @@ import sys
 
 # ===== CONFIG =====
 OUTPUT_FILE = "repo_dump.txt"
+# INCLUDE_EXTENSIONS = {
+#     ".ipynb", ".py", ".js", ".ts", ".java", ".html", ".css", ".json", ".md", ".yaml", ".yml"
+# }
 INCLUDE_EXTENSIONS = {
-    ".ipynb", ".py", ".js", ".ts", ".java", ".html", ".css", ".json", ".md", ".yaml", ".yml"
+# Common programming languages
+".py", ".pyw", ".pyx", ".pyi", ".c", ".h", ".cpp", ".cc", ".cxx", ".hpp", ".hh", ".hxx",
+".java", ".class", ".kt", ".kts", ".scala", ".sc", ".groovy", ".groovy", ".swift", ".m", ".mm",
+".rs", ".go", ".erl", ".ex", ".exs", ".elm", ".hs", ".jl", ".pm", ".pl", ".t", ".r",
+".dart", ".ipynb",
+
+# Web / frontend
+".html", ".htm", ".xhtml", ".css", ".scss", ".sass", ".less", ".js", ".mjs", ".cjs", ".ts", ".tsx",
+".jsx", ".vue", ".svelte", ".astro",
+
+# Markup / docs / text
+".txt", ".md", ".markdown", ".rst", ".adoc", ".asciidoc", ".docx", ".odt", ".rtf",
+
+# Config / data / serialization
+".json", ".json5", ".yaml", ".yml", ".toml", ".ini", ".cfg", ".conf", ".props", ".env", ".csv", ".tsv",
+
+# Build / package / lockfiles
+"package.json", "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "Pipfile", "Pipfile.lock",
+"requirements.txt", "setup.py", "pyproject.toml", "Makefile", "CMakeLists.txt", "Gemfile", "Gemfile.lock",
+
+# Shell / scripts
+".sh", ".bash", ".zsh", ".fish", ".ps1", ".psm1", ".cmd", ".bat",
+
+# SQL / DB
+".sql", ".psql", ".pgsql", ".sqlite", ".db", ".dml",
+
+# Templates
+".tpl", ".tmpl", ".jinja", ".j2", ".ejs", ".hbs", ".mustache", ".liquid", ".erb",
+
+# Logs / telemetry
+".log",
+
+# Binary-not-plain but editable with hex/text editors (include common text-editable formats)
+".pem", ".key", ".crt", ".csr", ".der",
+
+# Image metadata / icons / SVG (SVG is XML text)
+".svg", ".ico",
+
+# Shell scripting / make / docker
+"Dockerfile", ".dockerfile", ".dockerignore", ".k8s", ".kube", "kustomization.yaml", "helm-chart.yaml",
+
+# CI / CI configs
+".github", ".gitlab-ci.yml", ".circleci", ".travis.yml", ".azure-pipelines.yml", ".jenkinsfile",
+
+# License / legal
+"LICENSE", "LICENSE.md", "COPYING", "NOTICE", "CODE\_OF\_CONDUCT.md",
+
+# Editors / project files (text-editable)
+".vscode", ".editorconfig", ".sln", ".csproj", ".suo", ".proj", ".projitems",
+
+# .NET / C#
+".cs", ".fs", ".vb",
+
+# JavaScript package managers / lockfiles already included; other files:
+".esm", ".cjs",
+
+# Mobile
+".xml", ".plist", ".gradle", ".gradle.kts", ".keystore", ".apk" ,
+
+# Binary/executable names that are text-editable configs
+".service", ".socket", ".target",
+
+# Misc scripting / templating / DSLs
+".psv", ".ttl", ".rdf", ".dot", ".gv", ".graphql", ".gql",
+
+# Fonts/encoding text-based
+".ttf", ".otf", ".woff", ".woff2",
+
+# Package manifests / descriptors
+".nuspec", ".pom", ".pom.xml",
+
+# Misc
+".mdx", ".bib", ".tex", ".sty", ".cls", ".makefile",
+
+# Include common hidden config names
+".gitignore", ".gitattributes", ".env.example",
+
+# Ensure basic extensions from original set remain
+".ipynb", ".py", ".js", ".ts", ".java", ".html", ".css", ".json", ".md", ".yaml", ".yml"
+
 }
 EXCLUDE_DIRS = {
     ".git", "node_modules", "venv", "__pycache__", "dist", "build"
